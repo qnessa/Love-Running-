@@ -205,6 +205,12 @@ main {
         #menu a:hover {
             border-bottom: 1px solid #3a3a3a;
        }
+        /* Gallery */
+    #photos {
+        column-count: 4;
+    }
+}
+
     }
     @media screen and (min-width: 1200px) {    
         /* Reasons section */
@@ -232,7 +238,7 @@ main {
         #benefits-physical > div {
             align-self: flex-end;
         }
-    }
+    
     /* Meetup Times section */
 #times {
     background: url('../images/dublin-city.webp') no-repeat center/cover;
@@ -257,4 +263,16 @@ main {
 #times h3 {
     /* Override the heading colour set in general styles */
     color: #fafafa;
+}
+/* Gallery page */
+#photos img {
+    width: 100%;
+}
+
+#photos {
+    line-height: 0;
+}
+ /* Gallery */
+ #photos {
+    column-count: 3;
 }
