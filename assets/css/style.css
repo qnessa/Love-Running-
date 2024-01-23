@@ -75,7 +75,6 @@ nav {
     font-size: 2rem;
 }
 
-
 /*main*/
 main { 
     /* Make main element take up space to push footer down */
@@ -181,11 +180,52 @@ main {
         border-top: 1px solid #3a3a3a;
         margin: 5px 0;
     }
-    /* Large devices (laptops and desktops,992px and up) */
+    #circle-cover-bg {
+       background: url("../images/reasons-image (1).webp") no-repeat top center/cover;
+       height:90vw;
+       width: 90vw;
+       margin-bottom: 20px;
+       /*Makes a square image into a cirle*/
+       border-radius: 50%;
+       max-width: 300%;
+       max-height: 300%;
+    }
+    #benefits-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Large devices (laptops and desktops, 992px and up) */
     @media screen and (min-width: 992px) {
         #menu a:hover {
             border-bottom: 1px solid #3a3a3a;
-        }  
+       }
     }
-
-}
+    @media screen and (min-width: 1200px) {    
+        /* Reasons section */
+        #benefits {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+        #benefits > div {
+            flex: 1;
+        }
+    
+        #benefits-image {
+            order: 0;
+        }
+    
+        #benefits-mental {
+            order: 1;
+        }
+    
+        #benefits-mental > div {
+            align-self: flex-start;
+        }
+    
+        #benefits-physical > div {
+            align-self: flex-end;
+        }
+    }
